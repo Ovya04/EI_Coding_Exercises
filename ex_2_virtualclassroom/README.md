@@ -2,8 +2,8 @@
 
 ## 📚 Overview
 
-The Virtual Classroom Manager is a comprehensive, terminal-based application designed to streamline the management of virtual classrooms in educational institutions. Built with enterprise-grade standards, it implements advanced design patterns, SOLID principles, and gold-standard practices for logging, exception handling, and validation.
-<img width="972" height="381" alt="image" src="https://github.com/user-attachments/assets/da8d74b5-b2e9-4b84-b01f-5b6ae566bf78" />
+The Virtual Classroom Manager is a comprehensive, terminal-based application designed to streamline the management of virtual classrooms in educational institutions. Built with enterprise-grade standards, it implements advanced design patterns, SOLID principles, and gold-standard practices for logging, exception handling, and validation. This readme file contains the detailed implementation and output screenshots of all sample cases.
+<img width="974" height="345" alt="image" src="https://github.com/user-attachments/assets/6b76caa7-a330-4805-8d9a-c4608190e850" />
 
 
 ## ✨ Features
@@ -68,44 +68,73 @@ The Virtual Classroom Manager is a comprehensive, terminal-based application des
 - **Defensive Programming**: Extensive null checks and boundary validations
 - **Performance Optimization**: Efficient algorithms and memory management
 
-## 💻 Usage Guide
+## 💻 Usage and Sample Output
 ### Basic Commands
 <img width="1109" height="761" alt="image" src="https://github.com/user-attachments/assets/fc961f7f-98ab-40ec-940d-a5a6ad573e3a" />
 <img width="902" height="430" alt="image" src="https://github.com/user-attachments/assets/bbbaaf60-a298-40d8-a4f5-3db81347d2c3" />
 
-
-
-
-
 ## 📊 Sample Data & Testing
+#### Classroom Management:
+ Added a new classroom with and without description and capacity.
+ Listed current classrooms
+ Removed a classroom
+<img width="1083" height="731" alt="image" src="https://github.com/user-attachments/assets/4332a68c-6a36-4dd1-997e-8a3b31344655" />
+
+#### Student Management:
+When input is given in wrong format:
+<img width="787" height="84" alt="image" src="https://github.com/user-attachments/assets/6490194e-7ed5-4959-9d38-1d35508e92b1" />
+
+Adding student succesfully:
+<img width="936" height="203" alt="image" src="https://github.com/user-attachments/assets/0d29dd42-2572-4718-99ae-7b3fb21d61d5" />
+
+When a student with duplicate ID is tried to add:
+<img width="1088" height="134" alt="image" src="https://github.com/user-attachments/assets/303cf89d-ae80-455f-8f5c-bc21f5b4afac" />
+
+Adding and listing students with their ID (validated), email id(validated) and classroom name
+<img width="1256" height="725" alt="image" src="https://github.com/user-attachments/assets/baed0bd7-acc0-4546-91da-e9dce73260e1" />
+
+
+#### Assignment Management:
+
+Scheduled assignment succesfully:
+<img width="1012" height="240" alt="image" src="https://github.com/user-attachments/assets/d7d03fb3-616a-4c3d-968c-9468605b2b41" />
+
+When an assignment which is not submitted is tried to grade:
+<img width="1289" height="121" alt="image" src="https://github.com/user-attachments/assets/e56ffa45-c9eb-4466-b268-9ba5b7b7edeb" />
+
+Assignment submitted and graded successfully (with default feedback):
+<img width="1351" height="509" alt="image" src="https://github.com/user-attachments/assets/0b1ca66a-2451-423d-bef4-3684fd76f754" />
+
+Assignment graded with feedback:
+<img width="1184" height="269" alt="image" src="https://github.com/user-attachments/assets/f56d94da-a2f5-454d-a750-b2eb305b9185" />
+
+Assignments are listed along with grading and submission status:
+<img width="1116" height="550" alt="image" src="https://github.com/user-attachments/assets/fbe46097-c944-448d-9991-aec83905201b" />
+
+#### Attendance Management:
+Marked attendance:
+<img width="1028" height="334" alt="image" src="https://github.com/user-attachments/assets/a32f9425-de70-40bb-858f-caa0e22b76e9" />
+
+View attendance of a class (by default it is set to absent):
+<img width="977" height="270" alt="image" src="https://github.com/user-attachments/assets/fecbf57c-c055-4944-ad15-c0f01e008316" />
+
+Classroom details:
+<img width="1052" height="796" alt="image" src="https://github.com/user-attachments/assets/4b45bca5-ce7c-4157-b04b-80255a5c3a48" />
+
+Grades notified:
+<img width="1129" height="480" alt="image" src="https://github.com/user-attachments/assets/3c02ec18-7b6a-48c2-9004-5a0fb5e65b72" />
 
 
 
 
-### Validation Rules
-
-#### Student ID Format
-- Must follow pattern: `[A-Z]{2}[0-9]{4,6}`
-- Examples: `ST1234`, `AB123456`
-
-#### Email Validation
-- Standard email format validation
-- Must contain `@` and valid domain
-
-#### Classroom Names
-- 2-30 characters
-- Letters, numbers, spaces, hyphens, and underscores allowed
 
 
 
-## 🔒 Error Handling & Recovery
 
-### Validation Errors
-The application provides detailed validation error messages with suggestions for correction:
-```
-❌ Validation Error: Invalid student ID format: st123
-   Suggestion: Use format like ST1234 or AB123456
-```
+
+
+
+
 
 ### Data Integrity
 - Cascade operations for safe data removal
