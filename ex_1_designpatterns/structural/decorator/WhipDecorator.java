@@ -1,7 +1,5 @@
 package ex_1_designpatterns.structural.decorator;
 
-
-
 public class WhipDecorator extends CoffeeDecorator {
     public WhipDecorator(Coffee coffee) {
         super(coffee);
@@ -9,7 +7,7 @@ public class WhipDecorator extends CoffeeDecorator {
 
     @Override
     public String getDescription() {
-        return coffee.getDescription() + " + Whipped Cream";
+        return coffee.getDescription() + " + 🍦 Whipped Cream";
     }
 
     @Override
@@ -17,4 +15,3 @@ public class WhipDecorator extends CoffeeDecorator {
         return coffee.getCost() + 0.75;
     }
 }
-

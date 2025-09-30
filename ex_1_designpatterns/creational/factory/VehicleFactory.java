@@ -1,7 +1,5 @@
 package ex_1_designpatterns.creational.factory;
 
-
-
 public class VehicleFactory {
     public static Vehicle createVehicle(String vehicleType) {
         if (vehicleType == null || vehicleType.isEmpty()) {
@@ -20,4 +18,3 @@ public class VehicleFactory {
         }
     }
 }
-

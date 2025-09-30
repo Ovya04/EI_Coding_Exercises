@@ -1,7 +1,5 @@
 package ex_1_designpatterns.structural.decorator;
 
-
-
 public class SugarDecorator extends CoffeeDecorator {
     public SugarDecorator(Coffee coffee) {
         super(coffee);
@@ -9,7 +7,7 @@ public class SugarDecorator extends CoffeeDecorator {
 
     @Override
     public String getDescription() {
-        return coffee.getDescription() + " + Sugar";
+        return coffee.getDescription() + " + 🍯 Sugar";
     }
 
     @Override
@@ -17,4 +15,3 @@ public class SugarDecorator extends CoffeeDecorator {
         return coffee.getCost() + 0.25;
     }
 }
-

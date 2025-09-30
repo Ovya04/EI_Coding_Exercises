@@ -51,12 +51,35 @@ public class Pizza {
         }
     }
 
+    public double calculatePrice() {
+        double basePrice;
+        switch(size.toLowerCase()) {
+            case "small": basePrice = 8.99; break;
+            case "medium": basePrice = 12.99; break;
+            case "large": basePrice = 16.99; break;
+            default: basePrice = 12.99; break;
+        }
+        
+        if (cheese) basePrice += 1.50;
+        if (pepperoni) basePrice += 2.00;
+        if (mushrooms) basePrice += 1.25;
+        if (olives) basePrice += 1.00;
+        
+        return basePrice;
+    }
+
     @Override
     public String toString() {
-        return "Pizza [size=" + size + 
-               ", cheese=" + cheese + 
-               ", pepperoni=" + pepperoni +
-               ", mushrooms=" + mushrooms + 
-               ", olives=" + olives + "]";
+        StringBuilder sb = new StringBuilder();
+        sb.append(size).append(" Pizza with:");
+        if (!cheese && !pepperoni && !mushrooms && !olives) {
+            sb.append(" no toppings (Plain)");
+        } else {
+            if (cheese) sb.append(" Cheese");
+            if (pepperoni) sb.append(" Pepperoni");
+            if (mushrooms) sb.append(" Mushrooms");
+            if (olives) sb.append(" Olives");
+        }
+        return sb.toString();
     }
 }

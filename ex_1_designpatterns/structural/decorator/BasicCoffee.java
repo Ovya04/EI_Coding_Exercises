@@ -1,11 +1,9 @@
 package ex_1_designpatterns.structural.decorator;
 
-
-
 public class BasicCoffee implements Coffee {
     @Override
     public String getDescription() {
-        return "Basic Coffee";
+        return "☕ Basic Coffee";
     }
 
     @Override
@@ -13,4 +11,3 @@ public class BasicCoffee implements Coffee {
         return 2.00;
     }
 }
-
