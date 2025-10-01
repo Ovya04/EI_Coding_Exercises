@@ -1,21 +1,3 @@
- 
-/**
- * Singleton Logger Utility
- * 
- * Provides centralized logging functionality with different log levels.
- * Implements Singleton pattern to ensure single logger instance.
- * 
- * Features:
- * - Multiple log levels (DEBUG, INFO, WARN, ERROR)
- * - Timestamp formatting
- * - Thread-safe operation
- * - File logging simulation
- * 
- * @author Virtual Classroom Development Team
- * @version 2.0
- * @since 2025-09-25
- */
-
 package com.virtualclassroom.util;
 
 import java.time.LocalDateTime;
@@ -84,8 +66,7 @@ public class Logger {
             String timestamp = LocalDateTime.now().format(formatter);
             String logEntry = String.format("[%s] %s: %s", timestamp, level.name(), message);
             
-            // For this demo, we'll print to console
-            // In production, this would write to files
+        
             System.out.println(logEntry);
         }
     }
