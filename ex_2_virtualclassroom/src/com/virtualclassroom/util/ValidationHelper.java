@@ -1,22 +1,3 @@
- 
-/**
- * Validation Helper Utility
- * 
- * Provides centralized validation methods for input data.
- * Implements defensive programming practices and data integrity checks.
- * 
- * Features:
- * - Student ID format validation
- * - Email format validation
- * - Name validation with special characters
- * - Classroom name validation
- * - Null and empty string checks
- * 
- * @author Virtual Classroom Development Team
- * @version 2.0
- * @since 2025-09-25
- */
-
 package com.virtualclassroom.util;
 
 import java.util.regex.Pattern;
