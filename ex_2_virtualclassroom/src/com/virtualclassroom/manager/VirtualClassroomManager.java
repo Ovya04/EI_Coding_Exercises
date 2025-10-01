@@ -18,7 +18,7 @@ public class VirtualClassroomManager {
     private static final String WELCOME_MESSAGE = """
             ╔══════════════════════════════════════════════════════════════╗
             ║                 Virtual Classroom Manager v3.0               ║
-            ║                         (Date-Free)                          ║
+            ║                                                              ║
             ╚══════════════════════════════════════════════════════════════╝
             """;
 
