@@ -23,6 +23,20 @@
 
 
 #### Each folder contains it's own readme file consisting of detailed explanation about implementation and effective usage of design principles.
+### Quick access to all 6 implemented design patterns:
+
+#### 📁 Pattern Categories
+- **[🏗️ Creational](./creational/)** - Object creation patterns
+- **[🔗 Structural](./structural/)** - Object composition patterns  
+- **[🎭 Behavioural](./behavioural/)** - Object interaction patterns
+
+#### 🎯 Individual Patterns
+- **[🍕 Builder](./creational/builder/)** - Pizza customization
+- **[🚗 Factory](./creational/factory/)** - Vehicle rental
+- **[🌉 Bridge](./structural/bridge/)** - Media player system
+- **[☕ Decorator](./structural/decorator/)** - Coffee customization
+- **[⛓️ Chain of Responsibility](./behavioural/chain_of_responsibility/)** - Support tickets
+- **[👁️ Observer](./behavioural/observer/)** - Weather monitoring
 
 **Author**: Ovya Anand 
 
