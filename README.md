@@ -32,7 +32,7 @@ Each pattern is implemented with professional-grade error handling, comprehensiv
 ## Excercise 2: 
 
 ### Mini Project 8: Virtual Classroom Manager
-The Virtual Classroom Manager addresses a very real challenge: how to organize and oversee teaching activities without a complex learning management system (LMS). In basic terms, it lets an instructor spin up “classrooms,” enroll students, and track assignments—all from the command line.
+The Virtual Classroom Manager addresses a very real challenge: how to organize and oversee teaching activities without a complex learning management system (LMS). In basic terms, it lets an instructor handle classrooms, enroll students, and track assignments, all from the command line.
 
 With this tool, you can:
 
@@ -42,6 +42,6 @@ Register students and view their enrollment in each classroom.
 
 Schedule and submit assignments, track their status, and record grades.
 
-Handle all operations without a database—data is managed in memory for easy testing and extension.
+Handle all operations without a database instead data is managed in memory for easy testing and extension.
 
 Designed with clear separation of concerns, this project uses domain entities (Student, Assignment, Classroom), a central controller for command processing, and utility classes for logging and input validation. It provides a foundation you can extend with features like persistence, notifications, or a graphical interface.
