@@ -1,15 +1,3 @@
- 
-/**
- * Assignment Status Enumeration
- * 
- * Defines the possible states of an assignment throughout its lifecycle.
- * Used for state management and business logic validation.
- * 
- * @author Virtual Classroom Development Team
- * @version 2.0
- * @since 2025-09-25
- */
-
 package com.virtualclassroom.enums;
 
 public enum AssignmentStatus {
